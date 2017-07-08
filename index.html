@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+	<head>
+    <!--CSS-->
+        <meta charset="utf-8">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+        <link href="https://bootswatch.com/superhero/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/style.css" rel="stylesheet">
+        <meta content="width=device-width, initial-scale=1" name="viewport">
+        <title>Firebase Use-Case</title>
+		
+	</head>
+	<body>
+		<!--HTML-->
+		<div class="container">
+			<div class="row">
+				<div class="jumbotron">		  	
+				    	<p id="jumbotronText">A Comprehensive Directory of Employee Billable Hours</p>	
+				</div>
+			</div>
+			<div class="row">
+				<div class="panel panel-default">
+				  	<div class="panel-heading">Current Employees</div>
+				 	<div class="panel-body">
+				   		<table class="table table-hover" id="employee-data">
+						   <thead>
+						     <tr>
+						       <th>Train Name</th>
+						       <th>Route</th>
+						       <th>Start Time</th>
+						       <th>Frequency</th>
+						       <th>Time Until Next Train</th>
+						     </tr>
+						   </thead>
+						   <tbody class="tbody">
+						     
+						       
+						   <!--   <tr>
+						       <td>John</td>
+						       <td>Doe</td>
+						       <td>jdoe@example.com</td>
+						       <td>jdoe@example.com</td>
+						       <td>jdoe@example.com</td>
+						       <td>jdoe@example.com</td>
+						     </tr> -->
+
+						   </tbody>
+						 </table>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="panel panel-default">
+				  	<div class="panel-heading">Add Employee</div>
+				 	<div class="panel-body">
+						<form>
+							 <div class="form-group">
+							   <label for="Name">Train Name:</label>
+							   <input type="text" class="form-control" id="name-input">
+							 </div>
+							 <div class="form-group">
+							   <label for="Name">Route:</label>
+							   <input type="text" class="form-control" id="route-input">
+							 </div>
+							 <div class="form-group">
+							   <label for="pwd">Train Start:</label>
+							   <input type="text" class="form-control" id="start-input">
+							 </div>
+							 <div class="form-group">
+							   <label for="pwd">Frequency:</label>
+							   <input type="text" class="form-control" id="frequency-input">
+							 </div>
+							 <button class="btn btn-default" id ="add-train">Submit</button>
+							</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Javascript goes here -->
+		<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="assets/javascript/app.js"></script>
+		  <!-- Script -->
+
+    <script>
+
+    // START CODING BELOW!!
+
+    // Initialize Firebase
+    
+
+    // Initial Values
+
+   /* var name = "";
+
+    var email = "";
+
+    var age = 0;
+
+    var comment = "";
+
+    // Capture Button Click
+
+    $("#add-user").on("click", function(event) {
+      event.preventDefault();
+
+      name = $("#name-input").val().trim();
+
+      route = $("#route-input").val().trim();
+
+      start = $("#start-input").val().trim();
+
+      frequency = $("#frequency-input").val().trim();
+
+
+
+      // Code for the push
+
+      dataRef.ref().push({
+
+        name: name,
+
+        route: route,
+
+        start: start,
+
+        frequency: frequency,
+
+        dateAdded: firebase.database.ServerValue.TIMESTAMP
+
+      });
+
+    });
+
+    // Firebase watcher + initial loader HINT: .on("value")
+
+    dataRef.ref().on("child_added", function(snapshot) {
+
+      // Log everything that's coming out of snapshot
+
+      console.log(snapshot.val());
+
+      console.log(snapshot.val().name);
+
+      console.log(snapshot.val().route);
+
+      console.log(snapshot.val().start);
+
+      console.log(snapshot.val().frequency);
+
+      // Change the HTML to reflect
+
+      $("#name-display").html(snapshot.val().name);
+
+      $("#route-display").html(snapshot.val().route);
+
+      $("#start-display").html(snapshot.val().start);
+
+      $("#frequency-display").html(snapshot.val().frequency);
+
+    // Handle the errors
+
+    }, function(errorObject) {
+
+      console.log("Errors handled: " + errorObject.code);
+
+    });*/
+
+    </script>
+
+</body>
+</html>
